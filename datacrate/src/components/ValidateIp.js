@@ -25,8 +25,8 @@ export default function ValidateIp(values){
     else if(values.password !== values.cpassword){
         errors.cpassword="Password do not match!"
     }
-    else if(values.password.lenghth<6){
-        errors.password="Password lenghth should be more than 6 characters "
+    else if(values.cpassword.lenghth<6){
+        errors.cpassword="Password lenghth should be more than 6 characters "
     }
     return errors
 }
