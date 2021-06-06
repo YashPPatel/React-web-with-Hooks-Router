@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   font-family: 'PT Sans', sans-serif;
 }
 .load{
@@ -50,4 +50,4 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
+} 

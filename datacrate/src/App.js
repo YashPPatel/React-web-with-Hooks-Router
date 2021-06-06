@@ -5,9 +5,10 @@ import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import Home from './components/pages/Home'
 import Services from './components/pages/Services'
 import Products from './components/pages/Products'
-import SignUp from './components/pages/SignUp'
 import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader';
 import { css } from "@emotion/react";
+import './components/Form.css'
+import Form from './components/Form'
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
       },4500)
   }, [])
   return (
-    <>
+    <div className="App">
     {
       loading ?
       <ClimbingBoxLoader
@@ -44,13 +45,13 @@ function App() {
           <Route path="/" exact component={Home}/>
           <Route path="/services" component={Services} />
           <Route path="/products" component={Products} />
-          <Route path="/sign-up" component={SignUp} />
+          <Route path="/FormSignup" component={Form}/>
         </Switch>
       </Router>
 
 
     }
-          </>
+          </div>
   );
 }
 

@@ -2,7 +2,6 @@ import React from 'react'
 import {Button} from './Button'
 import './HeroSection.css'
 import video from '../videos/video-2.mp4'
-import '../App.css'
 import { Buttonwatch } from './Buttonwatch'
 
 export default function HeroSection() {
