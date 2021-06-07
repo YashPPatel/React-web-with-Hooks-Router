@@ -3,8 +3,8 @@ import './App.css';
 import Navbar from './components/Navbar'
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import Home from './components/pages/Home'
-import Services from './components/pages/Services'
 import Products from './components/pages/Products'
+import Services from './components/pages/Services'
 import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader';
 import { css } from "@emotion/react";
 import './components/Form.css'
