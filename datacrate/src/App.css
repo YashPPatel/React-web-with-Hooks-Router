@@ -18,7 +18,7 @@
 .services,
 .products,
 .sign-up {
-  display: flex;
+  
   height: 90vh;
   align-items: center;
   justify-content: center;
@@ -44,7 +44,7 @@
 }
 
 .sign-up {
-  background-color: #7fff00;   
+  background-color: #feba33;   
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
