@@ -1,0 +1,422 @@
+.blockcon .right_side video {
+    object-fit: cover;
+    width: auto;
+    height: 700px;
+    position:fixed;
+    padding-top: 0px;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+} 
+
+
+
+p{color: #fff;}
+.simplecon
+{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #000;
+}
+.simplecon p{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 300;
+}
+.simplecon img{
+    position: absolute;
+    padding-top: 25px;
+    left: 30%;
+    width: auto;
+    height: 70%;
+    transition: all 0.2s linear;
+}
+.simplecon img:hover {
+    transform: scale(1.1);
+}
+.fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+    animation: float 5s infinite;
+}
+
+  
+
+.simplecon1
+{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #fff;
+}
+.simplecon1 p{
+    color: #000;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 300;
+}
+.simplecon1 img{
+    position: absolute;
+    padding-top: 25px;
+    left: 27%;
+    width: auto;
+    height: 70%;
+    overflow: hidden;
+    transition: all 0.2s linear;
+}
+.simplecon1 img:hover {
+    transform: scale(1.1);
+}
+.fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+    animation: float 5s infinite;
+}
+
+.simplecon1 h4{
+    padding-top: 2%;
+    text-align: center;
+    color: #303030;
+}
+
+
+.blockcon
+{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    
+}
+.blockcon .left_side{
+    position: relative;
+    background: #000;
+    padding: 40px; 
+}
+.blockcon .right_side{
+    position: relative;
+    padding: 40px; 
+}
+.blockcon h4{
+    padding-top: 2%;
+    text-align: center;
+    color: #fff;
+}
+.blockcon p{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 2.8em;
+}
+.blockcon img{
+    position: absolute;
+    padding-top: 10px;
+    left: 13%;
+    width: auto;
+    height: 55%;
+}
+.blockcon .right_side p{
+    color: #000;
+}
+.blockcon .right_side h4{
+    color: #000;
+}
+.blockcon .right_side img{
+    position: absolute;
+    padding-top: 30px;
+    left: 10%;
+    width: auto;
+    height: 55%;
+}
+
+
+.blockcon1
+{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    
+}
+.blockcon1 .left_side{
+    position: relative;
+    background: #fff;
+    padding: 40px; 
+}
+.blockcon1 .right_side{
+    position: relative;
+    background: #000;
+    padding: 40px; 
+}
+.blockcon1 .left_side p{
+    color: #000;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 2.8em;
+}
+.blockcon1 .left_side h4{
+    color: #000;
+    padding-top: 2%;
+    text-align: center;
+}
+.blockcon1 .right_side h4{
+    padding-top: 2%;
+    text-align: center;
+    color: #fff;
+}
+.blockcon1 .right_side p{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 2.8em;
+}
+.blockcon1 img{
+    position: absolute;
+    padding-top: 40px;
+    left: 8%;
+    width: auto;
+    height: 55%;
+}
+.blockcon1 .right_side img{
+    position: absolute;
+    padding-top: 40px;
+    left: 12%;
+    width: auto;
+    height: 70%;
+}
+
+
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    
+}
+
+.container1
+{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    
+}
+
+
+.container .left_side
+{
+    position: relative;
+    background: #000;
+    padding: 20px;
+}
+.container1 .left_side
+{
+    position: relative;
+    background: #fff;
+    padding: 20px;
+}
+
+
+.left_side .pimg
+{
+    position: absolute;
+    padding-top: 60px;
+    top: 0px;
+    left: 150px; 
+    width: auto;
+    height: 90%;
+    object-fit: cover;
+    animation: prerak 5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes prerak {
+    0%{
+      top:0px
+    }
+    50%{
+      top:30px
+    }
+    100%{
+      top:0px
+    }
+  }
+
+.container .right_side
+{
+    position: relative;
+    background: #000;
+    padding: 20px;
+    overflow:auto;
+}
+.container1 .right_side
+{
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    overflow:auto;
+}
+
+
+
+@media (max-width: 1000px)
+{
+    .container
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container1
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .blockcon
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blockcon p{
+        font-size: 1.2em;
+    }
+    .blockcon img{
+        width: auto;
+        height: 50%;
+        left: 25%;
+    }
+    .blockcon .right_side {
+        padding: 120px;
+    }
+
+    .blockcon1
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blockcon1 .left_side p{
+        font-size: 1.2em;
+    }
+    .blockcon1 .right_side p{
+        font-size: 1.2em;
+    }
+    .blockcon1 .left_side img{
+        padding-top: 30px;
+        width: auto;
+        height: 45%;
+        left: 20%;
+    }
+    .blockcon1 .right_side img{
+        width: auto;
+        height: 54%;
+        left:30%;
+    }
+
+    
+
+    
+
+    .left_side .pimg{
+        padding: 0px;
+        width: 25%;
+    }
+    .simplecon img{
+        left:5%;
+        height:45%;
+    }
+    .simplecon1 img{
+        left:5%;
+        height:45%;
+    }
+    
+}
+@media (max-width: 600px)
+{
+    .container .left_side
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .container1 .left_side
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .blockcon .left_side
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .blockcon1 .left_side
+    {
+        grid-template-columns: repeat(2,1fr);
+        width: 414px;
+    }
+
+    
+
+    .left_side .pimg{
+        padding: 0px;
+        left: 5;
+        width: auto;
+    }
+    .simplecon img{
+        left:5%;
+        height:45%;
+    }
+    .simplecon1 img{
+        left:5%;
+        height:45%;
+    }
+}
+@media (max-width: 540px)
+{
+    .container .left_side
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .container1 .left_side
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .blockcon .left_side
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .blockcon1 .left_side
+    {
+        grid-template-columns: repeat(2,1fr);
+        width: 414px;
+    }
+    .container .left_side{
+        padding-bottom: 210px;
+    }
+    .container1 .left_side{
+        padding-bottom: 210px;
+    }
+    
+
+    .left_side .pimg{
+        padding: 0px;
+        left: 5;
+        width: auto;
+    }
+    .simplecon img{
+        left:5%;
+        height:45%;
+    }
+    .simplecon1 img{
+        left:5%;
+        height:45%;
+    }
+    
+}
