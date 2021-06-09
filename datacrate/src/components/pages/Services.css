@@ -125,10 +125,10 @@ body{
 .iphone{
     position: absolute;
     top: 30px;
-    left: 80px;
-    font-size: 5rem;
+    left: 120px;
+    font-size: 60px;
     text-transform: uppercase;
-    line-height: .9;
+    line-height: .4;
     color: #000;
     opacity: .4;
 }
@@ -158,7 +158,7 @@ body{
     0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-.shoeName{
+.phoneName{
     padding: 0 0 10px 0;
 }
 
@@ -335,7 +335,7 @@ body{
 }
 
 @media (max-width: 1070px){
-    .shoe{
+    .phone{
         width: 135%;
     }
 }
@@ -352,16 +352,17 @@ body{
         box-shadow: none;
     }
 
-    .shoe{
+    .phone{
         width: 100%;
-        transform: rotate(-5deg) translateY(-50%);
-        top: 55%;
-        right: 2%;
+        
+        top: 8%;
+        right: 0%;
     }
 
-    .nike{
-        top: 20%;
+    .iphone{
+        top: 8%;
         left: 5%;
+        font-size: 2rem;
     }
 }
 
@@ -382,11 +383,11 @@ body{
 }
 
 @media (max-width: 490px){
-    .nike{
+    .iphone{
         font-size: 7rem;
     }
 
-    .shoeName div .big{
+    .phoneName div .big{
         font-size: 1.3rem;
     }
 
