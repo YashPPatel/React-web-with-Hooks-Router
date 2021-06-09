@@ -267,7 +267,7 @@ const Hero = () => {
         </Container>
       </Section>
 
-      <div id="airdops">
+      <div id="airdops" className="bgservice">
       <div class="containerservice">
         <div class="card1">
           <div class="phonebackground">

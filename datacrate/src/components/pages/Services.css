@@ -198,8 +198,8 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color: #efefef;
+.bgservice{
+    background-color: #fff;
 }
 
 .containerservice{

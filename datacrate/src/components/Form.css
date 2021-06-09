@@ -1,6 +1,5 @@
-.bg{
-  background-image: url('../assets/bgy.jpg');
-  
+body{
+  background-color:#fff8dc;
 }
  .form-container {
   margin: 40px auto;
@@ -157,8 +156,9 @@
 }
 
 .form-input-btn {
-  width: 80%;
+  width: 81%;
   height: 50px;
+  margin-right:345px;
   margin-top: 10px;
   border-radius: 2px;
   margin-left: 40px;
