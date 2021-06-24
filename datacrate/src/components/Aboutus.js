@@ -13,7 +13,8 @@ function Aboutus() {
             <section className='aboutsec'>
                 <div class="text-container">
                     <p>Hello,</p>
-                    <p>Welcome to Datacrate</p>
+                    <p>Welcome to</p>
+                    <p>Datacrate</p>
                     <p>A perfect solution for your business</p>
                     <button class="hire-btn">Hire Us</button>
                     <button class="down-cv">Visit Us</button>
@@ -28,8 +29,8 @@ function Aboutus() {
                     <p>About Us</p>
                     <p>Devolper & Designer</p>
                     <p>Hello,We are Devolpers and also Designers.If you have asany Project or if you want make a software for your business conatact us.We make as soon as possibale.You really like our work,if you don't we change this until you like and give you seticfaction result.</p>
-                    <button>Hire Me</button>
-                    <button>Download CV</button>
+                    <button>Hire Us</button>
+                    <button>Visit Us</button>
                 </div>
             </div>
             <div class="aboutservices">

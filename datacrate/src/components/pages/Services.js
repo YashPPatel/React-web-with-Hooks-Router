@@ -48,6 +48,11 @@ background: #000;
 display: grid;
 padding-top: 50px;
 grid-template-columns: 2fr 2fr;
+
+@media (max-width: 1000px){
+  grid-template-columns: repeat(1,1fr);
+
+}
 `;
 
 const ColumnLeft = styled.div`
@@ -115,7 +120,11 @@ const ColumnRight = styled.div`
     bottom: 100px;
     right: 75px;
   }
+  @media (max-width: 1000px){
+    display:none
+  }
 `;
+
 
 const Hero = () => {
   const fadeLeft = {
