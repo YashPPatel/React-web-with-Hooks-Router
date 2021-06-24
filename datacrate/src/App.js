@@ -10,14 +10,12 @@ import { css } from "@emotion/react";
 import './components/Form.css'
 import Form from './components/Form'
 import Signup from './components/Signup'
+import Aboutus from './components/Aboutus'
 
 
 function App() {
 
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => setIsLoading(false), 4500);
-  }, []);
+  
 
 
   const [loading,setLoding] = useState(false);
@@ -55,7 +53,7 @@ function App() {
           <Route path="/products" component={Products} />
           <Route path="/Form" component={Form}/>
           <Route path="/signup" component={Signup}/>
-          <Form isLoading={isLoading} />
+          <Route path="/Aboutus" component={Aboutus}/>
         </Switch>
       </Router>
       

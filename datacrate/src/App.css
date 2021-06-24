@@ -25,8 +25,7 @@
   font-size: 3rem;
 }
 
-.services {
-  background-image:url('./assets/img-2.jpg');  
+.services { 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,7 +34,6 @@
 }
 
 .products {
-  background-image: url('./assets/img-1.jpg'); 
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -43,8 +41,7 @@
   font-size: 100px;
 }
 
-.sign-up {
-  background-color: #feba33;   
+.sign-up {  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

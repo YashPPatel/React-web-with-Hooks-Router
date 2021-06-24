@@ -49,27 +49,25 @@ form{
 
 .login-content .input-div{
 	position: relative;
-    display: grid;
+    display:flex;
+	color: #d9d9d9;
     grid-template-columns: 7% 93%;
-    margin: 25px 0;
+    margin-top: 45px;
+	margin-bottom: 45px;
     padding: 5px 0;
+	padding-bottom: 10px;
     border-bottom: 2px solid #d9d9d9;
+	
 }
 .input-div:hover{
 	border-bottom: 2px solid #38d39f;
+	color:#38d39f;
 }
 
 
 
 .login-content .input-div.one{
 	margin-top: 0;
-}
-
-.iform{
-	color: #d9d9d9;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 
@@ -84,37 +82,11 @@ form{
 
 
 
-.input-div:before, .input-div:after{
-	content: '';
+
+
+.input-div input{
 	position: absolute;
-	bottom: -2px;
-	width: 0%;
-	height: 2px;
-	background-color: #38d39f;
-	transition: .4s;
-}
-
-.input-div:before{
-	right: 50%;
-}
-
-.input-div:after{
-	left: 50%;
-}
-
-.input-div.focus:before, .input-div.focus:after{
-	width: 50%;
-}
-
-
-
-.input-div.focus > .iform > i{
-	color: #38d39f;
-}
-
-.input-div > div > input{
-	position: absolute;
-	left: 0;
+	left: 10%;
 	top: 0;
 	width: 100%;
 	height: 100%;
@@ -125,6 +97,9 @@ form{
 	font-size: 1.2rem;
 	color: #555;
 	font-family: 'poppins', sans-serif;
+}
+.input-div input:hover{
+	content: "";
 }
 
 .input-div.pass{
