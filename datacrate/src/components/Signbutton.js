@@ -15,7 +15,7 @@ export const Signbutton = ({
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
 
     return (
-        <Link to="/FormSignup" className="btn-mobile">
+        <Link to="/Form" className="btn-mobile">
             <button className={`btn ${checkButtonStyle} ${checkButtonSize}`}
             onClick={onClick}
             type={type}

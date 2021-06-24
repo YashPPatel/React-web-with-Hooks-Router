@@ -9,9 +9,17 @@ import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader';
 import { css } from "@emotion/react";
 import './components/Form.css'
 import Form from './components/Form'
+import Signup from './components/Signup'
 
 
 function App() {
+
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => setIsLoading(false), 4500);
+  }, []);
+
+
   const [loading,setLoding] = useState(false);
 
   const over = css`
@@ -45,12 +53,16 @@ function App() {
           <Route path="/" exact component={Home}/>
           <Route path="/services" component={Services} />
           <Route path="/products" component={Products} />
-          <Route path="/FormSignup" component={Form}/>
+          <Route path="/Form" component={Form}/>
+          <Route path="/signup" component={Signup}/>
+          <Form isLoading={isLoading} />
         </Switch>
       </Router>
-
+      
+      
 
     }
+    
           </div>
   );
 }

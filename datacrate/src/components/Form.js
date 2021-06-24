@@ -1,37 +1,61 @@
-import React, { useState } from 'react';
-import FormSignup from './FormSignup';
-import FormSuccess from './FormSuccess';
-import signup from '../assets/signup.jpg'
-import img1 from '../assets/mobileimg.jpg'
+import React, { useEffect , useRef, useState} from 'react';
+import {Link} from 'react-router-dom'
 import './Form.css'
 import '../App.css'
-
+import wave from '../assets/wave.png'
+import avatar from '../assets/avatar.svg'
+import bg from '../assets/bg.svg'
+import ScriptTag from 'react-script-tag'
 const Form = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  <ScriptTag type="text/javascript" src="./components/Formjs.js" />
+  // const [username, setUsername] = useState("");
+  // const usernameRef =useRef(null);
+  // useEffect(() => {
+  //   usernameRef.current && usernameRef.current.focus();
+  // }, [])
 
-  function submitForm() {
-    setIsSubmitted(true);
-  }
+  // const onChangeusername = (e) => {
+  //   setUsername(e.target.value);
+  // };
+
+  
   return (
     <>
-    
-    
-      <div className='form-container'>
-        <span className='close-btn'>×</span>
-        <div className='form-content-left'>
-           <img className='form-img' src={signup} />
-           <img className='form-mobimg' src={img1} />
 
+      <img className="wave" src={wave} />
+      <div className="containerform">
+        <div className="imgform">
+          <img src={bg}/>
         </div>
-        {!isSubmitted ? 
-          <FormSignup submitForm={submitForm} />
-         : 
-          <FormSuccess />
-        }
-      
+        <div className="login-content">
+          <form action="#">
+            <img src={avatar}/>
+            <h2>Welcome</h2>
+            <div className="input-div">
+              <div className="iform">
+                <i className="fas fa-user"></i>
+              </div>
+              <div>
+                
+              <input className="input" type="text" placeholder="Username"/>
+              </div>
+            </div>
+            <div className="input-div">
+              <div className="iform">
+                <i className="fas fa-lock"></i>
+              </div>
+              <div>
+                
+                <input className="input" type="password" placeholder="Password" />
+              </div>
+            </div>
+            <a href="#" className="formlink">Forgot Password?</a>
+            <input type="submit" className="btnform" value="login"/>
+            <h4>OR</h4>
+            <Link to="./Signup" style={{textDecoration:"none"}}><input type="submit" className="btnform" value="Signup" /></Link>
+          </form>
+        </div>
       </div>
-      
-      
     </>
   );
 };
